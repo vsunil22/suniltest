@@ -20,7 +20,8 @@ public class TestngListeners implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
+		System.out.println("FAILED TEST");
+		UtilTest.Takescreenshot(result.getMethod().getMethodName());
 		
 	}
 

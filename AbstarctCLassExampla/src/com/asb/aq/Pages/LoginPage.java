@@ -24,28 +24,17 @@ public class LoginPage extends BaseTest {
 	@FindBy(id="ctl00_ContentPlaceHolder1_LoginButton")
 	WebElement LoginButton;
 	
-	@FindBy(xpath="//id[containes(text(),,\"Card Operations\")]\")")
-	WebElement textcardd;
-	
 	//intialize objects
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Actions
-	public boolean validateAsbpage()
+	public void login()
 	{
-		return textcardd.isDisplayed();
-	}
-	
-	public HomePage login()
-	{
-		username.sendKeys(prop.getProperty("username"));
-		password.sendKeys(prop.getProperty("password"));
+		username.sendKeys("demo26");
+		password.sendKeys("Ag10le.Card");
 		LoginButton.click();
-		return new HomePage();
-			
 		
 	}
 	

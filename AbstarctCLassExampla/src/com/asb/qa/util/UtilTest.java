@@ -67,13 +67,13 @@ public class UtilTest extends BaseTest{
 		
 }
 	
-	public static void Takescreenshot() 
+	public static void Takescreenshot(String testmethhodname) 
 	{
 		try
 		{
 			String curdir=prop.getProperty("currentdir");
 			File screnshotfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(screnshotfile, new File(curdir +System.currentTimeMillis()+".png"));
+			FileUtils.copyFile(screnshotfile, new File(curdir +testmethhodname+".png"));
 		}catch(IOException e)
 		{
 			e.printStackTrace();

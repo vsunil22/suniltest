@@ -18,11 +18,13 @@ public class HomepageTest extends BaseTest {
 	HomePage homepage;
 	String sheetname="MerchantData";
 	
+	/*
+	 * home page login
+	 */
 	
 	public HomepageTest() {
-		super();
+		super();	
 	}
-	
 	
 	
 	@BeforeMethod
@@ -30,11 +32,8 @@ public class HomepageTest extends BaseTest {
 	{
 		intialize();
 		loginpage =new LoginPage();
-		homepage=loginpage.login();
-		HomePage homepage=new HomePage();
 		
 	}
-	
 	
 	@Test
 	public void validatehomepage()
@@ -48,14 +47,14 @@ public class HomepageTest extends BaseTest {
 	{
 		homepage.Merchanthsearch();
 	}
-//	@DataProvider
-//	public Object[][] getmerchnatdata()
-//	{
-//		Object [][] data=UtilTest.getTestdata(sheetname);
-//		return data;
-//		
-//		
-//	}
+	
+	@DataProvider
+	public Object[][] getmerchnatdata()
+	{
+		Object [][] data=UtilTest.getTestdata(sheetname);
+		return data;	
+	}
+	
 //	
 //	@Test(dataProvider="getmerchnatdata")
 //	public void Addmerchant(String MerchantNumber,String BatchNumber,String BatchAmount,String CardholderNumber,String TransctionType,String Cardtype,String chargetype)

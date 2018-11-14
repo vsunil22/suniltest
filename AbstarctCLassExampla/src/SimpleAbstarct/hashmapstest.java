@@ -13,7 +13,8 @@ public class hashmapstest {
 		 hm.put(1,"sunil");
 		 hm.put(2, "naveen");
 		 
-		 hm.get(1);
+		 
+		 ;
 		 
 		 for(Entry<Integer, String> m:hm.entrySet())
 		 {

@@ -34,7 +34,7 @@ public static webdrivereventlisterers eventlistener;
 	public BaseTest() {
 		try {
 			prop=new Properties();
-			FileInputStream ip= new FileInputStream("C:\\Users\\sv78\\eclipse-workspace\\AbstarctCLassExampla\\src\\com\\asb\\qa\\config\\config.properties");
+			FileInputStream ip= new FileInputStream("C:\\ACFg\\config.properties");
 			prop.load(ip);
 			
 		}
@@ -79,7 +79,7 @@ public static webdrivereventlisterers eventlistener;
 		driver.manage().timeouts().implicitlyWait(UtilTest.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(UtilTest.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 //		driver.get(prop.getProperty("url"));
-		driver.get("https://uspnsvulm185.americas.hpqcorp.net/servicing-asbbank/login.aspx");
+		driver.get("https://uspnsvulm806.lab.ad.elabs.svcs.entsvcs.net/servicing-CBAMC/Login.aspx ");
 	}
 	
 

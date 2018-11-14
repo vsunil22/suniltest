@@ -1,5 +1,7 @@
 package com.Hp.ASBTest;
 
+import java.net.HttpURLConnection;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
@@ -20,6 +22,7 @@ import org.testng.annotations.Test;
 import com.asb.aq.Pages.LoginPage;
 import com.asb.qa.BaseTest.BaseTest;
 import com.asb.qa.util.UtilTest;
+import com.gargoylesoftware.htmlunit.javascript.host.URL;
 
 @Listeners(com.asb.qa.util.TestngListeners.class)
 public class LoginPageTest extends BaseTest{
@@ -44,35 +47,15 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority=1)
 	public void loginpagetest()
 	{
-		
 		loginpage.login();
-		util.Takescreenshot();
-		
-		List<WebElement> List=driver.findElements(By.id(""));
-		for(WebElement e:List)
-		{
-			if(e.isSelected())
-			{
-				String s=e.getText();
-			}
-			
-		}
-	
-	Alert al=driver.switchTo().alert();
-	al.accept();
-	al.dismiss();
-	al.sendKeys("");
-	al.getText();
-	
-	
 		
 	}
 	
-//	@AfterMethod
-//	public void teardown()
-//	{
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void teardown()
+	{
+		driver.quit();
+	}
 	
 	
 

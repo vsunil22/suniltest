@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Hp.ASBTest.HomepageTest">
+      <class name="com.Hp.ASBTest.LoginPageTest">
         <methods>
-          <include name="validatehomepage"/>
-          <include name="merchantserahcBynumber"/>
-          <include name="teardown"/>
+          <include name="loginpagetest"/>
           <include name="setup"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.Hp.ASBTest.HomepageTest -->
+      </class> <!-- com.Hp.ASBTest.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

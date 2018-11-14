@@ -12,6 +12,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.gargoylesoftware.htmlunit.javascript.host.media.AnalyserNode;
+
 public class BasicTestNg { 
 	
 	WebDriver driver;
@@ -38,7 +40,7 @@ public class BasicTestNg {
 		
 	}
 	
-	@Test
+	@Test(retryAnalyzer = com.asb.qa.util.Retryanalizer.class)
 	public void Login()
 	{
 		String titlle=driver.getTitle();

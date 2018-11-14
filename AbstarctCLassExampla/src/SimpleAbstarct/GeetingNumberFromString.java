@@ -14,13 +14,13 @@ public class GeetingNumberFromString {
 			{
 				System.out.println(arr[i]);
 				sum=sum+Integer.parseInt(String.valueOf(arr[i]));
-				
 			}
 		}
 		System.out.println(sum);
 
 		//Reverse string without reverse method or with out string buffer and string Builder
 		String s1="sunil";
+		
 		for (int i=s1.length()-1;i>=0;i--)
 		{
 			System.out.println(s1.charAt(i));

@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 public class countnumberofwords {
 		    public static void main(String[] args) throws IOException 
 		    { 
-		        File file = new File("C:\\Users\\Mayank\\Desktop\\1.txt"); 
+		        File file = new File("C:\\Users\\sv78\\Desktop\\sunil.txt"); 
 		        FileInputStream fileStream = new FileInputStream(file); 
 		        InputStreamReader input = new InputStreamReader(fileStream); 
 		        BufferedReader reader = new BufferedReader(input); 

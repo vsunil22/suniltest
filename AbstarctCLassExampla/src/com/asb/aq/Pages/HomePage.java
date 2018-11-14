@@ -55,11 +55,7 @@ public class HomePage extends BaseTest {
 		ac.clickAndHold();
 		ac.doubleClick();
 		ac.keyDown(Keys.ALT);
-		
-		
-
 		MerchantSearchDrowpdown.click();
-		
 		searchbutton.click();
 	}
 	

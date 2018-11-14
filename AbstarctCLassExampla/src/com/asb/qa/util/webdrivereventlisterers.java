@@ -176,10 +176,7 @@ public void beforeSwitchToWindow(String arg0, WebDriver arg1) {
 public void onException(Throwable error, WebDriver driver) {
 	System.out.println("exception occcured: "+error);
 	
-	
-		UtilTest.Takescreenshot();
-	
-	
+
 	// TODO Auto-generated method stub
 	
 }
