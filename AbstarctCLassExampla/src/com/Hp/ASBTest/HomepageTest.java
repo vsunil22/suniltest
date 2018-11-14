@@ -39,7 +39,7 @@ public class HomepageTest extends BaseTest {
 	public void validatehomepage()
 	{
 		boolean b=homepage.validatehomepage();
-		Assert.assertTrue(b, "home page not displyed");
+		Assert.assertTrue(b, "home page not displyed correctly");
 	}
 	
 	
